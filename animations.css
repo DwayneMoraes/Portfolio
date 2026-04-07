@@ -87,6 +87,34 @@
     transform: scale(var(--work-hover-scale));
 }
 
+/* Sound (portrait / vertical video): scale proportionally, no cropping */
+.project-card--sound .project-image-wrap--sound {
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card--sound .project-image-wrap--sound video {
+    width: auto;
+    max-width: min(100%, 20rem);
+    max-height: min(72vh, 36rem);
+    height: auto;
+    flex: 0 0 auto;
+    min-height: 0;
+    object-fit: contain;
+    transform: none;
+}
+
+.project-card--sound:hover .project-image-wrap--sound video {
+    transform: none;
+}
+
+@media (max-width: 900px) {
+    .project-card--sound .project-image-wrap--sound video {
+        max-width: min(72vw, 18rem);
+        max-height: min(62vh, 32rem);
+    }
+}
+
 /* text side */
 .project-copy {
     display: flex;
