@@ -243,7 +243,7 @@ section, #top { scroll-margin-top: 11rem; }
     width: 100%;
     max-width: 520px;
 
-    /* 🔥 FIXED HEIGHT — makes ALL cards same height */
+    /* 🔥 FIXED HEIGHT: makes ALL cards same height */
     height: 450px; /* adjust if needed */
 
     animation: floatSlow 8s ease-in-out infinite;
@@ -391,7 +391,7 @@ section, #top { scroll-margin-top: 11rem; }
 /* ABOUT / FOOTER */
 /* ======================================= */
 
-/* ABOUT — left-aligned title + grid; minmax(0,…) + min-width:0 stop wide art from blowing out the grid */
+/* ABOUT: left-aligned title + grid; minmax(0,…) + min-width:0 stop wide art from blowing out the grid */
 .about-clean {
     display: flex;
     flex-direction: column;
@@ -447,7 +447,7 @@ section, #top { scroll-margin-top: 11rem; }
     color: #333;
 }
 
-/* MOBILE — Stack vertically */
+/* MOBILE: Stack vertically */
 @media (max-width: 850px) {
     .about-flex {
         grid-template-columns: 1fr;
